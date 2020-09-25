@@ -4,7 +4,7 @@ public class AddressBook {
 
     public static LinkedList<BuddyInfo> budList = new LinkedList();
 
-    public void addBuddy(BuddyInfo y) {
+    public void addBuddy(BuddyInfo bud) {
 
         budList.add(bud);
 
@@ -16,7 +16,12 @@ public class AddressBook {
     }
 
     public static void main(String[] name) {
-        System.out.println("Address Book");
+
+        BuddyInfo bud = new BuddyInfo("Areeb","Carleton","613");
+        AddressBook addressBook = new AddressBook();
+        addressBook.addBuddy(bud);
+        addressBook.removeBuddy(bud);
+
     }
 
 }
