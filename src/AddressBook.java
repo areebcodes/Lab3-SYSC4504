@@ -1,7 +1,8 @@
 import java.util.*;
 public class AddressBook {
 
-
+#All methods for addressbook
+    
     public static LinkedList<BuddyInfo> budList = new LinkedList();
 
     public void addBuddy(BuddyInfo bud) {
